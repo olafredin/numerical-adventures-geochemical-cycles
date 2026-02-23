@@ -1,0 +1,48 @@
+# --- Security & Secrets ---
+.env
+*.pem
+*.key
+secrets.json
+
+# --- Operating System Files ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+
+# --- Programming Languages ---
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.parcel-cache
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# --- Logs & Temporary Files ---
+*.log
+*.tmp
+*.bak
+.cache/
