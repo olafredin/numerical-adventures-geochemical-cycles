@@ -5,7 +5,7 @@
 
 This repository is a modern computational adaptation of the foundational text **"Numerical Adventures with Geochemical Cycles"** by **James C. G. Walker (1991)**. 
 
-While the original book utilized earlier computing paradigms (such as BASIC and manual numerical recipes), this project refactors those lessons into **Python 3** and **Jupyter Notebooks**. It is designed as a self-study course for MSc and PhD students in Earth Sciences, Geochemistry, and Climatology who wish to master learn basics of Earth system modeling.
+While the original book utilized earlier computing paradigms (such as BASIC and manual numerical recipes), this project refactors those lessons into **Python 3** and **Jupyter Notebooks**. It is designed as a self-study course for MSc and PhD students in Earth Sciences, Geochemistry, and Climatology who wish to learn basics of Earth system modeling.
 
 ---
 
@@ -15,7 +15,7 @@ James Walker’s approach to geochemical box modeling remains one of the most in
 
 1.  **Readability:** Python’s syntax allows the geochemistry and climatology to stay at the forefront, rather than the boilerplate code.
 2.  **Interactivity:** Jupyter Notebooks allow students to perturb fluxes (e.g., inject a CO2 pulse) and see the system response instantly.
-3.  **Modern Toolkits:** Moving beyond loops to utilize modern libraries like `NumPy` and `SciPy`.
+3.  **Modern Toolkits:** Towards the end, we move beyond loops to utilize modern libraries like `NumPy` and `SciPy`.
 
 ---
 
@@ -23,24 +23,24 @@ James Walker’s approach to geochemical box modeling remains one of the most in
 
 The repository follows the chapter-by-chapter progression of the original book, with modern enhancements:
 
-### 1. Introduction: Why simulate? (The Modern Twist)
+### 1. Introduction: Why simulate? (The modern twist)
 *Updated for the 21st Century.* We explore simulation not just as a tool for solving equations, but as a vital laboratory for "What If" scenarios in the Anthropocene—covering everything from deep-time paleoclimate to modern carbon sequestration.
 
 ### 2. Chapters 02–08: The adventures
-A systematic reconstruction of Walker's box models:
+A systematic reconstruction of Walker's box models (his adventures):
 * **Mass balance & steady state:** Understanding reservoirs and residence times.
-* **The Carbon cycle:** Modeling the thermostat that keeps Earth habitable.
+* **The Carbon cycle:** Modeling the thermostat that keeps Earth habitable or over-heating
 * **Atmosphere/ocean evolution:** Simulating exchange of species and how it affects climate
 
 ### 3. Chapter 09: Numerical Evolution (Euler and Newton-Raphson vs. SciPy)
-This chapter provides a bridge to modern modeling tools. We compare:
+This chapter provides a brief bridge to modern modeling tools. We compare:
 * **The "Old School":** Manual implementation of Euler’s and Newton-Raphson methods as used in the original text.
 * **The "Modern Standard":** Utilizing `scipy.integrate.solve_ivp` with adaptive step-size solvers (e.g., RK45 and BDF).
-* **The Verdict:** Visualizing numerical drift and understanding why "stiff" geochemical systems require modern algorithms, however the transparency of Walker's simple solvers might be lost.
+* **The Verdict:** Visualizing numerical drift and understanding why "stiff" geochemical systems require modern algorithms. However, the transparency of Walker's simple solvers might be lost.
 
 ---
 
-## Getting Started
+## Getting started
 
 ### Prerequisites
 You will need a standard scientific Python environment:
