@@ -1,56 +1,62 @@
-# numerical-adventures-geochemisty-cycles
-Jupyter notebook modernization of James A. Walker book "Numerical Adventures with Geochemical Cycles
+# Numerical Adventures in Geochemical Cycles: A Python Modernization
 
-Numerical Adventures with Geochemical Cycles
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-Overview
+This repository is a modern computational adaptation of the foundational text **"Numerical Adventures with Geochemical Cycles"** by **James C. G. Walker (1991)**. 
 
-This repository contains Jupyter notebooks that translate and modernize the numerical simulations from Numerical Adventures with Geochemical Cycles by James C. G. Walker. These simulations explore fundamental processes in geochemistry, climate evolution, and Earth's carbon cycle using Python.
+While the original book utilized earlier computing paradigms (such as BASIC and manual numerical recipes), this project refactors those lessons into **Python 3** and **Jupyter Notebooks**. It is designed as a self-study course for MSc and PhD students in Earth Sciences, Geochemistry, and Climatology who wish to master learn basics of Earth system modeling.
 
-Structure
+---
 
-The repository follows a modular structure where each chapter's numerical model is rewritten in Python and explained in detail.
+## Why Modernize Walker?
 
-notebooks/ - Collection of Jupyter notebooks for different chapters.
+James Walker’s approach to geochemical box modeling remains one of the most intuitive ways to understand the feedback loops regulating our planet. However, Walker's "adventures" are still relevant today. This modernization provides:
 
-data/ - Any input datasets required for the simulations.
+1.  **Readability:** Python’s syntax allows the geochemistry and climatology to stay at the forefront, rather than the boilerplate code.
+2.  **Interactivity:** Jupyter Notebooks allow students to perturb fluxes (e.g., inject a CO2 pulse) and see the system response instantly.
+3.  **Modern Toolkits:** Moving beyond loops to utilize modern libraries like `NumPy` and `SciPy`.
 
-scripts/ - Additional Python scripts for modular functions.
+---
 
-Getting Started
+## Course Structure
 
-Prerequisites
+The repository follows the chapter-by-chapter progression of the original book, with modern enhancements:
 
-Ensure you have Python installed along with the necessary libraries:
+### 1. Introduction: Why Simulate? (The Modern Twist)
+*Updated for the 21st Century.* We explore simulation not just as a tool for solving equations, but as a vital laboratory for "What If" scenarios in the Anthropocene—covering everything from deep-time paleoclimate to modern carbon sequestration.
 
-pip install numpy scipy matplotlib jupyter
+### 2. Chapters 02–08: The Core Adventures
+A systematic reconstruction of Walker's box models:
+* **Mass balance & steady state:** Understanding reservoirs and residence times.
+* **The Carbon cycle:** Modeling the thermostat that keeps Earth habitable.
+* **Atmosphere/ocean evolution:** Simulating exchange of species and how it affects climate
 
-Running the Notebooks
+### 3. Chapter 09: Numerical Evolution (Euler and Newton-Raphson vs. SciPy)
+This chapter provides a bridge to modern modeling tools. We compare:
+* **The "Old School":** Manual implementation of Euler’s and Newton-Raphson methods as used in the original text.
+* **The "Modern Standard":** Utilizing `scipy.integrate.solve_ivp` with adaptive step-size solvers (e.g., RK45 and BDF).
+* **The Verdict:** Visualizing numerical drift and understanding why "stiff" geochemical systems require modern algorithms, however the transparency of Walker's simple solvers might be lost.
 
-Clone the repository:
+---
 
-git clone https://github.com/yourusername/numerical-geochemical-cycles.git
-cd numerical-geochemical-cycles
+## Getting Started
 
-Launch Jupyter Notebook:
+### Prerequisites
+You will need a standard scientific Python environment:
+* **Python 3.8+**
+* **NumPy** (Numerical arrays)
+* **SciPy** (Integration and ODE solvers)
+* **Matplotlib** (Visualization)
+* **Jupyter/JupyterLab**
 
+### Installation
+```bash
+# Clone the repository
+git clone [https://github.com/olafredin/numerical-adventures-geochemisty-cycles.git](https://github.com/olafredin/numerical-adventures-geochemisty-cycles.git)
+
+# Navigate to the directory
+cd numerical-adventures-geochemisty-cycles
+
+# Launch the notebooks
 jupyter notebook
-
-Open and run the relevant notebooks from the notebooks/ directory.
-
-Notebooks
-
-Completed Chapters
-
-CO₂ Exchange Simulation (notebooks/co2_exchange_simulation.ipynb)
-
-Models the exchange of atmospheric CO₂ using explicit and implicit Euler methods, as well as SciPy's solve_ivp.
-
-Contributing
-
-Contributions are welcome! If you would like to add improvements or additional simulations, feel free to submit a pull request.
-
-License
-
-This repository is for educational purposes and follows an open-source license.
-
