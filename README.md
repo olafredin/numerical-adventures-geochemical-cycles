@@ -24,7 +24,7 @@ James Walker’s approach to geochemical box modeling remains one of the most in
 The repository follows the chapter-by-chapter progression of the original book, with modern enhancements:
 
 ### 1. Introduction: Why simulate? (The modern twist)
-*Updated for the 21st Century.* We explore simulation not just as a tool for solving equations, but as a vital laboratory for "What If" scenarios in the Anthropocene—covering everything from deep-time paleoclimate to modern carbon sequestration.
+We discuss simulation not just as a tool for solving equations, but as a  laboratory for "What If" scenarios in the Anthropocene. We also discuss some of the huge computing paradigms that has changed since the original book was published in 1991.
 
 ### 2. Chapters 02–08: The adventures
 A systematic reconstruction of Walker's box models (his adventures):
